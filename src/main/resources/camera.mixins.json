@@ -1,0 +1,7 @@
+{
+    "package": "me.lucyydotp.camera.mixin",
+    "client": [
+        "GameRendererMixin",
+        "FogRendererMixin"
+    ]
+}

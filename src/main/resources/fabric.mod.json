@@ -1,0 +1,31 @@
+{
+    "schemaVersion": 1,
+    "id": "very-cool-and-epic-screenshot-graphics-settings-mod-thing",
+    "name": "Lucy's Very Cool and Epic Screenshot Graphics Settings Mod Thing (working title)",
+    "description": "Take nice screenshots without ever opening the vanilla graphics options menu!",
+    "version": "$version",
+
+    "contact": {
+        "sources": "https://github.com/lucyydotp/very-cool-and-epic-screenshot-graphics-settings-mod-thing",
+        "issues": "https://github.com/lucyydotp/very-cool-and-epic-screenshot-graphics-settings-mod-thing/issues"
+    },
+
+    "entrypoints": {
+        "client": [
+            {
+                "adapter": "kotlin",
+                "value": "me.lucyydotp.camera.CameraMod"
+            }
+        ]
+    },
+    "environment": "client",
+    "authors": [
+        "lucyy.p"
+    ],
+    "depends": {
+        "fabric-api": "*",
+        "fabric-language-kotlin": ">=1.10.13+kotlin.1.9.20",
+        "sheeplib": "^1.1.0"
+    },
+    "mixins": ["camera.mixins.json"]
+}

@@ -1,0 +1,13 @@
+{
+    "screenshot-settings-mod.dialog.title": "Camera settings",
+
+    "screenshot-settings-mod.fov": "FOV: %s°",
+    
+    "screenshot-settings-mod.fog": "Fog",
+    "screenshot-settings-mod.fog.start": "Start: %s%%",
+    "screenshot-settings-mod.fog.falloff": "Falloff: %s%%",
+    
+    "screenshot-settings-mod.fog.shape": "Shape: ",
+    "screenshot-settings-mod.fog.shape.sphere": "Sphere",
+    "screenshot-settings-mod.fog.shape.cylinder": "Cylinder"
+}
