@@ -50,7 +50,7 @@ public class CameraDialog private constructor(x: Int, y: Int) : Dialog(x, y), Th
         val widget = StringWidget(
                 Component.translatable(name, current),
                 Minecraft.getInstance().font,
-            ).atBottom(0).also { it.width = TEXT_WIDTH }
+        ).atBottom(0).also { it.width = TEXT_WIDTH }
         SliderWidget(SLIDER_WIDTH, min, max, this@CameraDialog, current) {
             onSet(it)
             widget.message = Component.translatable(name, it)
@@ -77,11 +77,13 @@ public class CameraDialog private constructor(x: Int, y: Int) : Dialog(x, y), Th
         ) { CameraMod.fogFalloff = it / 100f }
 
         ToggleButton.enum<FogShape>(
-            "screenshot-settings-mod.fog.shape",
-            Component.translatable("screenshot-settings-mod.fog.shape"),
+                "screenshot-settings-mod.fog.shape",
+                Component.translatable("screenshot-settings-mod.fog.shape"),
                 this@CameraDialog,
         ) {
             CameraMod.fogShape = it
         }.atBottom(0, 2)
+            // https://github.com/Noxcrew/sheeplib/issues/16
+            .width = SLIDER_WIDTH
     }
 }
